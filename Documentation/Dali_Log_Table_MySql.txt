@@ -1,0 +1,10 @@
+CREATE TABLE `database`.`dali_log` (
+  `ID` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `SQL` TEXT NOT NULL,
+  `Exception` TEXT,
+  `ExecutionTime` INTEGER UNSIGNED NOT NULL,
+  `DateTime` DATETIME NOT NULL,
+  `Success` BOOLEAN NOT NULL,
+  PRIMARY KEY (`ID`)
+)
+ENGINE = InnoDB;
